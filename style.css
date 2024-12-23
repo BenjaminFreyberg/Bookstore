@@ -1,14 +1,15 @@
 @font-face {
-    font-family: 'Raleway';
-    src: url('./fonts/Raleway/Raleway-Italic-VariableFont_wght.ttf'); 
     font-family: 'Teko';
-    src: url('./fonts/Teko/Teko-VariableFont_wght.ttf');
+    src: url('./fonts/Teko-VariableFont_wght.ttf');
+    font-family: 'Roboto';
+    src: url('./fonts/Roboto-Medium.ttf');
 }
 html {
     height: 100%;
 }
 body {
-    font-family: 'Teko';
+    font-family: 'Roboto';
+    font-size: 12px;
     margin: 0;
     padding: 0;
     height: 100%;
@@ -34,9 +35,122 @@ footer {
     align-items: center;
     font-size: 12px;
 }
+.main-container {
+    display: flex;
+    flex-direction: row;
+}
 #headerIcon {
 
     height: 75px;
     width: 75px;
     margin-left: 16px;
+    
+}
+.span-color{
+    color: white;
+}
+.header-logo-text{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+}
+.center-card {
+    display: flex;
+    justify-content: center;
+}
+.card{
+    margin: 12px;
+    background-color: #082029;
+    color: white;
+
+}
+.card-title{
+    text-align: center;
+    margin-bottom: -16px;
+}
+.book-image{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(8, 33, 43);
+}
+.like-button {
+    width: 60px;
+    height: 60px;
+    filter: invert(19%) sepia(65%) saturate(6360%) hue-rotate(355deg) brightness(106%) contrast(127%)
+    
+}
+.price-like-container {
+    margin-left: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bookInfo {
+    display: flex;
+    flex-direction: column;
+    
+}
+#price{
+    font-size: 32px;
+    color: #ff0000;
+    font-weight: bold;
+}
+#likes{
+    color: white;
+    font-weight: bold;
+}
+.likes-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divider{
+    border-top: 3px solid hsl(170, 82%, 37%);
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+table{
+    margin-left: 16px;
+    
+}
+.comment-container{
+    display: flex;
+
+}
+.td-streched{
+    min-width: 100px;
+}
+h3 {
+    margin-left: 16px;
+    
+}
+h5{
+    margin-bottom: -16px;
+}
+.comment-design {
+    background-color: #082029;
+    color: white;
+}
+.comment-design::-webkit-input-placeholder {
+    color: white;
+  }
+
+.comment-area{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+.sendit{
+    height: 25px;
+     
 }
