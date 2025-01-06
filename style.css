@@ -7,7 +7,7 @@
 html {
     height: 100%;
 }
-body {
+/* body {
     font-family: 'Roboto';
     font-size: 12px;
     margin: 0;
@@ -153,4 +153,180 @@ h5{
 .sendit{
     height: 25px;
      
+} */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: white;
+    margin: 0;
+}
+
+header {
+    background-color: #093949;
+    display: flex;
+    padding: 20px;
+}
+#headerIcon {
+
+    height: 75px;
+    width: 75px;
+    margin-left: 16px;
+    
+}
+
+main {
+    background-color: #021821;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.container-max-width {
+    max-width: 1440px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.book {
+    flex: 1 1 300px;
+    background-color: #093949;
+    margin: 20px 40px;
+    padding: 10px;
+    border-radius: 15px;
+    max-width: 300px;
+}
+
+.book div {
+    padding: 5px;
+}
+
+#bookname {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+#bookimage {
+    width: 100%;
+    display: flex;
+    object-fit: contain;
+    height: 90px;
+    background-color: #105063;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+#specifications {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 14px;
+}
+
+#specificationHeadline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#price {
+    color: #ff4d4d;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.likes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin: 5px 0;
+}
+
+.likes i {
+    color: red;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+#specifications td:first-of-type {
+    width: 120px;
+}
+
+#comments {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 14px;
+    height: 170px;
+    margin-top: 10px;
+}
+#comments p {
+    font-weight: bold;
+}
+
+.commentText {
+    height: 120px;
+    overflow-y: auto;
+}
+
+.commentText::-webkit-scrollbar {
+    background-color: #0a5269;
+    width: 3px;
+}
+
+.commentText::-webkit-scrollbar-thumb {
+    background-color: #0e87ba;
+}
+
+#comments table {
+    border-spacing: 0px 15px;
+}
+
+#comments td:first-of-type {
+    width: 120px;
+    vertical-align: top;
+}
+
+#comments input {
+    width: calc(100% - 40px);
+    padding: 5px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+#comments i {
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+footer {
+    display: flex;
+    padding: 20px;
+    background-color: #093949;
+}
+.sendit{
+    height: 25px;
+     
+}
+
+@media (max-width: 480px ) {
+
+    .book {
+        background-color: #093949;
+        margin: 5px 5px;
+    }
+
 }
